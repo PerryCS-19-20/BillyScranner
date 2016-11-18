@@ -3,23 +3,18 @@
     <head>
     </head>
     <body>
-        <span id="s1" onclick="clicked();"></span>
         <textarea rows="10" cols="80" id="inputText">plz enter text here</textarea>
         <button onclick="testHTML();">Test!</button>
         <br>
-        <ul>empty list k
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul id="list">
         </ul>
         <script>
             function testHTML(){
                 var userInput = document.getElementById("inputText");
-                var theSpan = document.getElementById("s1");
-                theSpan.innerHTML = userInput.value;
+                var list = document.getElementById("list");
+                var item = document.createElement("li");
+                item.textContent = userInput.value;
+                list.appendChild(item);
             }
          </script> 
     </body>
