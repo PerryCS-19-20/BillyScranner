@@ -14,10 +14,10 @@
         <script>
             function testHTML(){
                 for (var i = 0; i <100; i++){
-                  var iWillNot = I will not...;
+                  var iWillNot = "I will not...";
                   var list = document.getElementById("list");
                   var item = document.createElement("li");
-                  item.textContent = iWillNot.value;
+                  item.textContent = iWillNot.text;
                   list.appendChild(item);           
                 }
                 var userInput = document.getElementById("inputText");
