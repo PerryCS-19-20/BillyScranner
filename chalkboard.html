@@ -15,10 +15,10 @@
             function testHTML(){
                 var userInput = document.getElementById("inputText");
                 for (var i = 0; i <100; i++){
-                  var iWillNot = "I will not...";
+                  var iWillNot = "I will not... ";
                   var list = document.getElementById("list");
                   var item = document.createElement("li");
-                  item.textContent = iWillNot.text + userInput.value;
+                  item.textContent = iWillNot + userInput.value;
                   list.appendChild(item);           
                 }                    
             }
