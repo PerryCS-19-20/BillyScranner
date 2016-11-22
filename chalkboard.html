@@ -13,18 +13,14 @@
         </ol>
         <script>
             function testHTML(){
+                var userInput = document.getElementById("inputText");
                 for (var i = 0; i <100; i++){
                   var iWillNot = "I will not...";
                   var list = document.getElementById("list");
                   var item = document.createElement("li");
                   item.textContent = iWillNot.text;
                   list.appendChild(item);           
-                }
-                var userInput = document.getElementById("inputText");
-                var list = document.getElementById("list");
-                var item = document.createElement("li");
-                item.textContent = userInput.value;
-                list.appendChild(item);               
+                }                    
             }
         </script> 
     </body>
