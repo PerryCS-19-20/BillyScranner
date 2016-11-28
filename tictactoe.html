@@ -6,13 +6,14 @@
             var won="false";
             function play(cellid){
                 var cell = document.getElementById(cellid);
-                cell.textContent=player;
-                if(player=="X"){
-                    player="O";
-                } else {
-                    player="X";
+                if(cell.textContent==""){
+                    cell.textContent=player;
+                    if(player=="X"){
+                        player="O";
+                    } else {
+                        player="X";
+                    }
                 }
-                
             }
         </script>
         <style>
