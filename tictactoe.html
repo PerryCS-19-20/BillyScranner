@@ -3,11 +3,16 @@
     <head>
         <script>
             var player="X";
+            var won="false";
             function play(cellid){
-            var cell = document.getElementById(cellid);
-            if (cell.textContent){
+                var cell = document.getElementById(cellid);
+                cell.textContent=player;
+                if(player=="X"){
+                    player="O";
+                } else {
+                    player="X";
+                }
                 
-            }
             }
         </script>
         <style>
