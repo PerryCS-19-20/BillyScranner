@@ -8,6 +8,7 @@
                 var cell = document.getElementById(cellid);
                 if(cell.textContent==""){
                     cell.textContent=player;
+                    checkWin();
                     if(player=="X"){
                         player="O";
                     } else {
