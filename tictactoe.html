@@ -8,6 +8,7 @@
                 var cell = document.getElementById(cellid);
                 if(cell.textContent==""){
                     cell.textContent=player;
+                    checkWin();
                     if(player=="X"){
                         player="O";
                     } else {
@@ -27,8 +28,8 @@
                 var c1 = document.getElementById(c1id);
                 var c2 = document.getElementById(c2id);
                 var c3 = document.getElementById(c3id);
-                if(c1.textContent == c3.textContent) && (c2.textContent == c3.textContent){
-                    
+                if((c1.textContent == c3.textContent) && (c2.textContent == c3.textContent)){
+                    cl.style.color= "red";
                 }
             }
         </script>
