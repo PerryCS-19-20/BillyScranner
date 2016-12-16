@@ -24,24 +24,23 @@
             for (var row = 0; row < 11; row++){
                 tr = document.createElement("tr");
                 timesTable.appendChild(tr);
-            }
-            for (var row = 0; row < 11; col++){
-                if (row == 0) {
-                    cell = document.createElement("th");
-                    timesTable.appendChild(cell);
-                    cell.textContent = col;
-                    if (col == 0) {
-                        cell.textContent = "";
-                    }
-                } else {
-                    if (col == 0){
+                for (col = 0; col < 11; col++){
+                    if (row == 0) {
                         cell = document.createElement("th");
                         timesTable.appendChild(cell);
-                        cell.textContent = row * col;
+                        cell.textContent = col;
+                            if (col == 0) {
+                                cell.textContent = "";
+                            }
                     } else {
-                        cell = document.createElement("td");
-                        timesTable.appendChild(cell);
-                        cell.textContent = row * col;
+                        if (col == 0){
+                            cell = document.createElement("th");
+                            timesTable.appendChild(cell);
+                            cell.textContent = row * col;
+                        } else {
+                            cell = document.createElement("td");
+                            timesTable.appendChild(cell);
+                            cell.textContent = row * col;
                     }
                 }
             }
